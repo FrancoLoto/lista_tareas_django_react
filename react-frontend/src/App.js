@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   const [darkMode, setDarkMode] = useState("dark")
@@ -13,12 +14,7 @@ function App() {
 
   return (
     <div className={`${darkMode  === "dark" ? "dark" : "light"} min-h-screen flex flex-col`}>
-      <div className="bg-zinc-100 dark:bg-gray-900 flex-auto text-gray-900 dark:text-white">
-        <h1>React App</h1>
-        <button onClick={toggleDarkMode}>
-          <span>Dark Mode</span>
-        </button>
-      </div>
+      <LandingPage />
     </div>
   );
 }
